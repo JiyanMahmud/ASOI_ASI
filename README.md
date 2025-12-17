@@ -62,4 +62,3 @@ For questions or collaboration, open an issue or contact **jiyan@inf.elte.hu**.
 
 ---
 
-Would you like me to tailor this to your exact current folder names and dependencies (from your `requirements.txt` or `environment.yml`)?
