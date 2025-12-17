@@ -23,15 +23,13 @@ The code provides metrics, experiment pipelines, and notebooks to reproduce the 
 │  ├─ utils.py                # helpers (preprocessing, scoring, IO)
 │  └─ evaluation.py           # correlation, degradation tests, reporting
 ├─ experiments/               # Scripts to reproduce paper experiments
-├─ data/                      # (ignored) place datasets here
+├─ data/                      #  datasets 
 ├─ results/                   # outputs, tables, logs
 ├─ figures/                   # generated plots
 ├─ requirements.txt           # Python dependencies
-├─ environment.yml            # optional conda environment
 └─ README.md
 ```
 
-> If your layout differs, keep the headings but update paths accordingly.
 
 
 
@@ -44,23 +42,11 @@ The code provides metrics, experiment pipelines, and notebooks to reproduce the 
 * **Correlation with supervised metrics (F1, Spearman):** See `notebooks/03_correlation_analysis.ipynb`.
 * **weight sensitivity:** See `notebooks/04_ablation_studies.ipynb`.
 
-Outputs (tables, logs, figures) are written under `results/` and `figures/`.
 
 ## Datasets
 
-The code supports heterogeneous datasets (synthetic and real-world). For licensing reasons, datasets are not bundled. Each notebook specifies how to obtain and place files. Put raw data under `data/` and adjust notebook paths if necessary.
+The code supports heterogeneous datasets (synthetic and real-world). They are available publicly. 
 
-## Configuration
-
-* Global experiment settings: `experiments/config.yaml` (paths, seeds, algorithms, scoring).
-* Logging: runs write structured logs to `results/` with timestamps.
-* Reproducibility: fixed RNG seeds by default; set `seed` in configs/notebooks to override.
-
-## Troubleshooting
-
-* **Mismatched shapes / masks:** Ensure your (N) and (A) partitions are derived from the same feature space after preprocessing.
-* **Scaling:** For many distances, standardizing features improves stability.
-* **Sparse / degenerate features:** The code filters near-zero-variance features to avoid numerical issues.
 
 ## Citation
 
@@ -70,7 +56,6 @@ If you use ASOI/ASI or this codebase, please cite the paper:
 
 ```
 
-> Replace placeholders with the final bibliographic details once available.
 
 
 For questions or collaboration, open an issue or contact **jiyan@inf.elte.hu**.
