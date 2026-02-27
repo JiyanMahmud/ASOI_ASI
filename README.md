@@ -256,6 +256,3 @@ If you use ASOI in your research, please cite:
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
