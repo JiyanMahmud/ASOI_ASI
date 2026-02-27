@@ -351,9 +351,7 @@ if __name__ == "__main__":
     print(f"Well-separated  ASOI : {compute_asoi(normal, anomaly):.4f}  (expect high)")
     print(f"Overlapping     ASOI : {compute_asoi(normal, overlap):.4f}  (expect low )")
     print()
-    print(f"Well-separated  ASI  : {compute_asi(normal, anomaly):.4f}")
-    print(f"Overlapping     ASI  : {compute_asi(normal, overlap):.4f}")
-    print()
+    
 
     # Test the from-predictions helper
     X_all  = np.vstack([normal, anomaly])
